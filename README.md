@@ -6,7 +6,7 @@ For instructions on running and testing the project, see
     
     https://www.lagomframework.com/get-started-scala.html
 
-##Software versions used in this example:
+## Software versions used in this example:
     jdk   1.8.0_161
     sbt   1.2.8
     scala 2.12.8
