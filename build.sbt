@@ -102,11 +102,3 @@ startElasticSearch in ThisBuild := {
     }
   }
 }
-
-lazy val elasticSearchPermissions = taskKey[Unit]("Execute the shell script")
-
-elasticSearchPermissions := {
-  val log = streams.value.log
-  log.info(s"""chmod -R 777 ${target.value / s"elasticsearch-$elasticSearchVersion"}""")
-  s"""chmod -R 777 ${target.value / s"elasticsearch-$elasticSearchVersion"}""" !
-}
