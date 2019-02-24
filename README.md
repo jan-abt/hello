@@ -10,3 +10,6 @@ For instructions on running and testing the project, see
     jdk   1.8.0_161
     sbt   1.2.8
     scala 2.12.8
+    
+##Services are listed here
+    http://localhost:9008/services    

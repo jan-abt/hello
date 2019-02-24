@@ -29,7 +29,7 @@ class HelloServiceImpl(persistentEntityRegistry: PersistentEntityRegistry) exten
   }
 
 
-  override def greetingsTopic(): Topic[api.GreetingMessageChanged] =
+  override def publishGreetingChanged(): Topic[api.GreetingMessageChanged] =
     TopicProducer.singleStreamWithOffset {
       fromOffset =>
         persistentEntityRegistry.eventStream(HelloEvent.Tag, fromOffset)
